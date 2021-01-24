@@ -1,2 +1,2 @@
-# github-demo
-A simple demo repository to practice the basics of Git workflow
+
+This is the repository for a Website Project
