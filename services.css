@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+.services-section{
+    box-sizing: border-box;
+    height: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin: 0;
+    padding: 0;
+    font-family:'Arimo', sans-serif;
+}
+
+.border{
+    width: 160px;
+    height: 2px;
+    background: #333;
+    color: #333;
+    margin: 40px auto;
+}
+
+.services-page_content{
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+    max-width: 1024px;
+    margin: 0 auto;
+    font-family: 'Arimo', sans-serif;
+}
+
+@media(min-width: 600px){
+    .services-page_content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width: 800px){
+    .services-page_content{
+        grid-template-columns: repeat(5,1fr);
+    }
+}
+
+.services-card{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1),
+        0 2px 2px rgba(0,0,0,.1),
+        0 4px 4px rgba(0,0,0,.1),
+        0 8px 8px rgba(0,0,0,.1);
+    cursor: pointer;
+}
+
+@media(min-width: 600px){
+    .services-card{
+        height: 400px;
+    }
+}
+
+.services-card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 1050ms cubic-bezier(0.19,1,0.22,1);
+    pointer-events: none;
+}
+
+.services-card::after{
+    content: '';
+    display: block;;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 200%;
+    pointer-events: none;
+    background-image: linear-gradient(
+        to bottom, rgba(0,0,0,0) 0%,
+        rgba(0,0,0,0.009)11.7%,
+        rgba(0,0,0,0.034)22.1%,
+        rgba(0,0,0,0.072)31.2%,
+        rgba(0,0,0,0.123)39.4%,
+        rgba(0,0,0,0.182)46.6%,
+        rgba(0,0,0,0.249)53.1%,
+        rgba(0,0,0,0.320)58.9%,
+        rgba(0,0,0,0.394)64.3%,
+        rgba(0,0,0,0.468)69.3%,
+        rgba(0,0,0,0.540)74.1%,
+        rgba(0,0,0,0.607)78.8%,
+        rgba(0,0,0,0.668)83.6%,
+        rgba(0,0,0,0.721)88.7%,
+        rgba(0,0,0,0.762)94.1%,
+        rgba(0,0,0,0.790)100%);
+        transform: translateY(-50%);
+        transition: transform 1400ms cubic-bezier(0.19,1,0.22,1);
+}
+
+.services-card:nth-child(1)::before{
+    background-image: url("/assets/imgs/service-call.jpg");
+}
+
+.services-card:nth-child(2)::before{
+    background-image: url("/assets/imgs/security-cameras.jpg");
+}
+
+.services-card:nth-child(3)::before{
+    background-image: url("/assets/imgs/phone-system.jpg");
+}
+
+.services-card:nth-child(4)::before{
+    background-image: url("/assets/imgs/Data-cables.jpg");
+}
+
+.services-card:nth-child(5)::before{
+    background-image: url("/assets/imgs/bell-buzzer.jpg");
+}
+
+.services-page_content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2.85rem;
+    transform: transform 700ms cubic-bezier(0.19,1,0.22,1);
+    z-index: 1;
+}
+
+.card-title{
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1;
+    
+}
+
+.btn{
+    cursor: pointer;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.65rem;
+    font-weight: bold;
+    letter-spacing: 0.025rem;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 2px;
+   
+}
+
+.services-card:after{
+    transform: translateY(0);
+}
+
+.services-page_content{
+    transform: translateY(calc(100% - 4.5rem));
+}
+
+.services-page_content > *:not(.card-title){
+    opacity: translateY(1rem);
+    transition: transform 700ms cubic-bezier(0.19,1,0.22,1),
+                opacity 700ms cubic-bezier(0.19,1,0.22,1);
+}
+
+.services-card:hover{
+    align-items: center;
+}
+
+.services-card:hover::before{
+    transform: translateY(-4%)
+}
+
+.services-card:hover::after{
+    transform: translateY(-50%)
+}
+
+.services-card:hover .services-page_content{
+    transform: translateY(0);
+}
+
+.services-card:hover .services-page_content> *:not(.card-title){
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay:85ms ;
+}

@@ -1,0 +1,61 @@
+/* Certs Logos */
+
+    .certifications{
+        background-color:  #f9f9f9;
+    }
+    
+   .certifications .cert-container{
+      max-width: 1200px;
+      margin: auto;
+      overflow: hidden;
+      padding: 5rem 1rem;
+      background-color:  #f9f9f9;
+  }
+
+  .grid-4{
+      display: grid;
+      grid-gap: 5px;
+      grid-template-columns: repeat(4, 1fr);
+  }
+
+  .grid-2{
+      display: grid;
+      grid-gap: 25px;
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .center{
+      text-align: center;
+       margin: auto;
+  }
+
+  .main-logo{
+      height: 180px;
+  }
+
+  /* Small Screen */
+
+  @media(max-width: 560px){
+    .showcase::after{
+        height: 95vh;
+        width: 100%;
+    }
+
+    .content{
+        top: 15%;
+        margin-top: 10px;
+    }
+
+    .content .logo{
+        height: 140px;
+        width: 100%;
+    }
+    .content .text{
+        display: none;
+    }
+
+    .grid-4,
+    .grid-2{
+        grid-template-columns: 1fr;
+    }
+  }

@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.about-section{
+    
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #f1f1f1; */
+     background-color: #fdfdfd;
+   
+}
+
+.about{
+    background: url('/assets/imgs/network-engineer.jpg') no-repeat left;
+    background-size: 75%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.inner-section{
+    width: 50%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 140px;
+    box-shadow: 10px 10px 8px rgba(0,0,0,0.2);
+}
+
+.inner-section h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.text {
+    font-size: 13px;
+    line-height: 30px;
+    color: #545454;
+    text-align: justify;
+    margin-bottom: 40px;
+
+}
+
+.skills button{
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    width: 200px;
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+
+}
+
+.skills button:hover{
+    transition: 1s;
+    background-color: #ecf5f5;
+    color: royalblue;
+}
+
+@media screen and (max-width: 1200px){
+    .inner-section{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .about{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+
+    .inner-section{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .about{
+        padding: 0;
+    }
+
+    .inner-section{
+        padding: 60px;
+    }
+    .skills button{
+        font-size: 19px ;
+        padding: 5px;
+        width: 160px;
+    }
+}
+

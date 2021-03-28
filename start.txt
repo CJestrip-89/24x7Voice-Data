@@ -1,1 +1,4 @@
 Test git Quick Start demo
+
+Directory: 
+C:/Users/chris/Desktop/MyProjects
