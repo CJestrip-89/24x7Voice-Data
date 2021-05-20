@@ -1,3 +1,18 @@
+// Navbar Fixed Change
+
+const nav = document.querySelector('.nav')
+window.addEventListener('scroll',fixNav)
+
+function fixNav() {
+    if(window.scrollY > nav.offsetHeight + 50 ){
+        nav.classList.add('active')
+    }else{
+        nav.classList.remove('active')
+    }
+}
+
+
+
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');

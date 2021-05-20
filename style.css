@@ -2,16 +2,168 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
 
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
- nav{
+.home{
+   font-family: 'Roboto Condensed', sans-serif; 
+   padding-bottom: 50px;
+}
+/* .nav-container{
+    width: 100%;
+} */
+
+.home-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* @todo Nav  Logo */
+
+.logo{
+    width: 190px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* .logo.active{
+    width: 50px;
+    height: 50px;
+    
+} */
+.nav{
+   position: fixed; 
+   /* background-color: #222; */
+   top: 0;
+   left: 0;
+   right: 0;
+   transition: all .3s ease ease-in-out;
+}
+
+.nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nav a{
+    color: #fff;
+    /* padding: 30px; */
+    font-size: 15px;
+    text-decoration: none;
+    width: 25%;
+    padding: 25px 10px;
+    margin: 0 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav.active{
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3) ;
+}
+
+.nav.active a{
+    color: #000;
+}
+
+
+
+.nav.active .container{
+    padding: 15px 0;
+}
+
+.nav a.current, .nav a:hover{
+    color: royalblue;
+    font-weight: bold;
+    transition: .3s;
+}
+/* .nav li a::after{
+ content: '';
+ position: absolute;
+ display: block;
+ width: 0;
+ height: 2px;
+ background: #fff;
+transition: width .3s;
+} */
+
+.nav li a::after{
+ content: '';
+ position: absolute;
+ left: 50%;
+bottom: 0;
+ transform: translateX(-50%) scaleX(0);
+ -webkit-transform: translateX(-50%) scaleX(0);
+ -webkit-transform-origin: 50% 50%;
+ transform-origin: 50% 50%;
+ width:100%;
+ height: 2px;
+ background-color: rgba(255,255,255,0.9);
+ -webkit-transition: transform 250ms;
+ transition: transform;
+ 
+}
+
+/* .nav li a:hover::after {
+    width: 100%;
+} */
+.hero{
+    background-image: url('/assets/imgs/Home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -2;
+}
+
+.hero::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+
+.hero h1{
+    font-size: 46px;
+    margin: -20px 0 20px;
+}
+
+.hero p{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+ /* nav{
      margin: 0 auto;
      width: 100%;
      font-family: 'Roboto Condensed', sans-serif;
-     /* background-color:#ffffff ; */
  }
 
 
@@ -40,9 +192,11 @@ nav ul li:nth-child(4){ float: left;}
    text-decoration: none; 
     display: block;
     padding: 10px 15px
-}
+} */
+
+
 /* nav ul li a:hover{} */
-.logo_area{
+/* .logo_area{
      width: 250px;
       height: 250px; 
       position: absolute; 
@@ -62,20 +216,19 @@ nav ul li:nth-child(4){ float: left;}
      position: absolute;
      right: 0;
      top: .5em;
- }
+ } */
 
- .burger div{
-     /* position: absolute; */
-     /* top: .75em; */
+ /* .burger div{
+    
      right: 0;
      width: 25px;
      height: 3px;
      margin: 5px ;
      background-color: black;
      transition: all 0.3s ease;
- }
+ } */
 
- @media screen and (max-width: 1024px){
+ /* @media screen and (max-width: 1024px){
    
  }
 
@@ -133,9 +286,11 @@ nav ul li:nth-child(4){ float: left;}
 
  .nav-active{
      transform: translateX(0%);
- }
+ } */
 
- @keyframes navLinkFade{
+
+
+ /* @keyframes navLinkFade{
      from{
         opacity: 0;
         transform: translateX(50px);
@@ -165,8 +320,8 @@ nav ul li:nth-child(4){ float: left;}
     background-repeat: no-repeat;
     background-position: center;
 
-    /* filter: contrast(1.1) grayscale(0.08) saturate(1.2) sepia(0.37) brightness(1.3); */
- }
+    
+ } */
 
 
   

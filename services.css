@@ -16,7 +16,241 @@
     font-family:'Roboto Condensed', sans-serif;
 }
 
-.section-body{
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper
+{
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background: #fafafa;
+}
+
+.wrapper h1
+{
+    font-size: 3em;
+    margin: 25px 0;
+    text-align: center;
+    font-weight: 500 ;
+}
+
+.content-box
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap ;
+    width: 1000px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+
+.card
+{
+    min-height: 300px;
+    width: 325px;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    margin: 10px 4px;
+    box-shadow:  0px 15px 25px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card i
+{
+margin: 20px;
+color:#ff5724;
+}
+
+.card h2
+{
+    margin-bottom:12px ;
+    font-weight: 400;
+    text-align: center;
+}
+
+.card p
+{
+color: #6c757d;
+text-align: center;
+}
+
+.card:hover i,
+.card:hover p
+{
+    color: #fff;
+}
+
+.card:hover h2{
+    font-weight: 600;
+    color: #f2f2f2;
+
+}
+
+.card:nth-child(1):hover
+{
+   background:linear-gradient(45deg,
+                              rgba(255,28,8,0.7)0%,
+                              rgba(255,0,82,0.7)100%),
+                              url('/assets/imgs/service.jpg');
+    background-size: cover;
+}
+.card:nth-child(2):hover
+{
+   background:linear-gradient(45deg,
+                              rgba(255,28,8,0.7)0%,
+                              rgba(255,0,82,0.7)100%),
+                              url('/assets/imgs/service.jpg');
+    background-size: cover;
+}
+.card:nth-child(3):hover
+{
+   background:linear-gradient(45deg,
+                              rgba(255,28,8,0.7)0%,
+                              rgba(255,0,82,0.7)100%),
+                              url('/assets/imgs/security-cameras.jpg');
+    background-size: cover;
+}
+.card:nth-child(4):hover
+{
+   background:linear-gradient(45deg,
+                              rgba(255,28,8,0.7)0%,
+                              rgba(255,0,82,0.7)100%),
+                              url('/assets/imgs/office-phone-100621813-large.jpg');
+    background-size: cover;
+}
+.card:nth-child(5):hover
+{
+   background:linear-gradient(45deg,
+                              rgba(255,28,8,0.7)0%,
+                              rgba(255,0,82,0.7)100%),
+                              url('/assets/imgs/Data-cables.jpg');
+    background-size: cover;
+}
+.card:nth-child(6):hover
+{
+   background:linear-gradient(45deg,
+                              rgba(255,28,8,0.7)0%,
+                              rgba(255,0,82,0.7)100%),
+                              url('/assets/imgs/doorbell.jpg');
+    background-size: cover;
+}
+
+/****Responsive*****/
+@media(max-width:991px)
+{
+    .wrapper{
+        padding: 25px;
+    }
+    .wrapper h1{
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+    .content-box{
+        flex-direction: column;
+        width: 100%;
+    }
+    .card{
+        min-width: 300px;
+        margin: 10px auto;
+    }
+
+}
+
+/* .services{
+    background: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10rem 0;
+}
+
+.services h1{
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+}
+
+.services__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+} */
+
+/* .services__card img{
+    margin: 10px;
+    height: 450px ;
+    width: 275px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff; */
+    /* background-image: url("/service-call.jpg") center no-repeat; */
+    /* transition: 0.3s ease-in; */
+/* } */
+/* Use the nth() for card background */
+
+/* .services__card h2{
+    text-align: center;
+}
+
+.services__card p{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.services__btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.services__card button{
+    color: #fff;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 2px;
+    background: #131313;
+    font-size: 1rem;
+}
+
+.services__card button:hover{
+    cursor: pointer;
+} */
+
+/* .services__card */
+
+/* @media screen and (max-width:1300px){
+    .services__wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (max-width:768px){
+   .services__wrapper{
+        grid-template-columns: 1fr;
+    } 
+} */
+
+/* .section-body{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,7 +311,7 @@
     .panel:nth-of-type(5) {
         display: none;
     }
-}
+} */
 
 /* .services-page_content{
     display: grid;
