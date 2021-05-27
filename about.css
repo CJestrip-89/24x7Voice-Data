@@ -4,101 +4,97 @@
 *{
     margin: 0px;
     padding: 0px;
+    line-height: 1.5;
     box-sizing: border-box;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.about-section{
-    
-    min-height: 100vh;
+.about-us_container{
+    width: 100%;
+    min-height: 75vh;
+    background-color: #fdfdfd;
+}
+
+.about-us_container .title{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: #f1f1f1; */
-     background-color: #fdfdfd;
-   
-}
-
-.about{
-    background: url('/assets/imgs/network-engineer.jpg') no-repeat left;
-    background-size: 55%;
-    background-color: #fdfdfd;
-    overflow: hidden;
-    /* padding: 100px 0; */
-}
-
-.inner-section{
-    width: 50%;
-    float: right;
-    background-color: #fdfdfd;
-    padding: 140px;
-    box-shadow: 10px 10px 8px rgba(0,0,0,0.2);
-}
-
-.inner-section h1{
-    margin-bottom: 30px;
-    font-size: 30px;
-    font-weight: 900;
-}
-.text {
-    font-size: 13px;
-    line-height: 30px;
-    color: #545454;
-    text-align: justify;
-    margin-bottom: 40px;
-
-}
-
-.skills button{
     font-size: 22px;
-    text-align: center;
-    letter-spacing: 2px;
-    border: none;
-    border-radius: 20px;
-    padding: 8px;
-    width: 200px;
-    background-color: royalblue;
-    color: white;
-    cursor: pointer;
-    align-items: center;
+    color: #222;
+    letter-spacing: 1.5px;
+    padding: 50px 0px;
+}
+
+/* .about-us_container .title h1::after{
+    
+} */
+
+.about-content{
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin: 30px auto;
+}
+
+.about-content .about-article{
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
+    background-color: #fafafa;
+    padding: 25px 25px;
 
 }
 
-.skills button:hover{
-    transition: 1s;
-    background-color: #ecf5f5;
-    color: royalblue;
+.about-content .about-article h2{
+    color: #00c8ff;
+    font-size: 22px;
+    line-height: 1.5;
+    letter-spacing: 1px;
 }
 
-@media screen and (max-width: 1200px){
-    .inner-section{
-        padding: 80px;
-    }
+.about-content .about-article p{
+    margin: 30px;
+    font-size: 19px;
+    line-height: 1.5;
+    color: #222;
 }
 
-@media screen and (max-width: 1000px){
-    .about{
-        background-size: 100%;
-        padding: 100px 40px;
-    }
+.about-content .about-article a{
+    font-size: 22px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: #cc0000;
+    border-radius: 25px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    margin-top: 20px;
+    border: 1px solid #cc0000;
 
-    .inner-section{
-        width: 100%;
-    }
 }
 
-@media screen and (max-width: 600px){
-    .about{
-        padding: 0;
-    }
-
-    .inner-section{
-        padding: 60px;
-    }
-    .skills button{
-        font-size: 19px ;
-        padding: 5px;
-        width: 160px;
-    }
+.about-content .about-article a:hover{
+    background-color: #fff;
+    color: #cc0000;
+    transition: 0.2s ease;
 }
 
+
+.image-section{
+    width: 100%;
+    margin: auto;
+
+}
+.image-section img{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 900px){
+    .about-content{
+    grid-template-columns: repeat(1, 1fr);
+    }
+    .about-article{
+        text-align: center;
+    }
+}
