@@ -18,7 +18,7 @@
 
 .why-us_body{
     background: url('/assets/imgs/pexels-field-engineer-442150.jpg') no-repeat left;
-    background-size: 65%;
+    background-size: 60%;
     background-color: #fdfdfd;
     overflow: hidden;
     padding: 100px 0;
@@ -28,7 +28,7 @@
     background-color: #fdfdfd;
     width: 50%;
     float: right;
-    padding: 140px; 
+    padding: 70px; 
     box-shadow: 10px 10px 8px rgba(0,0,0,0.3)
 }
 
@@ -48,21 +48,23 @@
 }
 
 .btn button{
-    font-size: 25px;
+    font-size: 22px;
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     padding: 10px;
+    /* padding: 12px 35px; */
     width: 200px;
     background-color: #009990;
     color: white;
     cursor: pointer;
+    border: 1px solid #009990;;
 }
 
 .btn button:hover{
-transition: 1s;
-background-color: #ecf5f5;
+transition: 0.2s ease;
+background-color: #FFF;
 color: #009990;
 }
 
@@ -112,9 +114,9 @@ color: #009990;
         text-align: left;
         /* margin:; */
     }
-    .btn button{
+    /* .btn button{
 
-    }
+    } */
 
 
 }
