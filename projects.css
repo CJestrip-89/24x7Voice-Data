@@ -10,8 +10,10 @@
 .projects-body
 {
   font-family: 'Roboto Condensed', sans-serif;
-  height: 100%;
+  height: 100vh;
   width: 100%;
+  box-sizing: border-box;
+  background-color: #fafafa;
 }
 
 .projects-body h1

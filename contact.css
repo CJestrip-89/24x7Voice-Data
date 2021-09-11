@@ -1,0 +1,161 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.contact-body
+{
+    height: 100%;
+    background: #f9f9f9;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+
+
+.form-wrapper{
+    width: 100%;
+    max-width: 680px;
+    margin: 100px auto 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content{
+    text-align: center;
+}
+
+.content h1{
+    letter-spacing: 1px;
+}
+.content p{
+    color: #9b9b9b;
+    text-align: center;
+}
+
+
+.form{
+    width: 100%;
+    margin: 25px 0;
+    
+}
+
+.first-form,
+.second-form,
+.third-form,
+.final-form
+{
+width: 100%;
+min-height: 65px;
+margin: 15px 0;
+overflow: hidden;
+}
+
+
+.form input[type="text"],
+.form select,
+.form textarea{
+    padding: 15px 5px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #9b9b9b;
+    border-radius: 1px;
+    outline:none;
+    transition: all 0.2s ease;
+    
+}
+
+.form input:focus,
+.form textarea:focus
+{
+    border-color: #4169e1;
+}
+
+.form .label{
+    margin-bottom:5px ;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #9b9b9b;
+}
+
+.first-form .inner-form{
+    width: 45%;
+    float: left;
+    margin-right: 5%;
+}
+
+.first-form .inner-form:last-child{
+    margin-right: 0;
+}
+
+.second-form .inner-form{
+    width: 45%;
+    float: left;
+    margin-right: 5%;
+}
+
+.second-form .inner-form:last-child{
+    margin-right: 0;
+}
+
+.third-form .inner-form 
+{
+    width: 45%;
+    float: left;
+    margin-right: 5%;
+}
+
+
+.third-form .inner-form:last-child{
+    margin-right: 0;
+}
+
+.final-form textarea{
+    height: 120px;
+}
+
+ button{
+    /* background:#acb5ba ; */
+    background:#4169e1 ;
+    width: 200px;
+    padding: 20px 0;
+    border-radius:20px ;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: none;
+}
+
+@media screen and (max-width: 460px){
+    .wrapper
+    {
+        margin: 25px auto 0;
+    }
+    .first-form .inner-form
+    {
+        width: 100%;
+        margin: 5px 0;
+    }
+    .second-form .inner-form
+    {
+          width: 100%;
+         margin: 5px 0;
+    }
+    .third-form .inner-form{
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .btn{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+} 

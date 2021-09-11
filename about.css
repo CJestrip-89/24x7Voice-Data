@@ -11,8 +11,8 @@
 
 .about-us_container{
     width: 100%;
-    min-height: 75vh;
-    background-color: #fdfdfd;
+    min-height: 50vh;
+    background-color: white;
 }
 
 .about-us_container .title{
@@ -23,7 +23,8 @@
     font-size: 22px;
     color: #222;
     letter-spacing: 1.5px;
-    padding: 50px 0px;
+    /* padding: 20px 0px; */
+    margin: 25px 0;
 }
 
 /* .about-us_container .title h1::after{
@@ -46,7 +47,7 @@
 }
 
 .about-content .about-article h2{
-    color: #00c8ff;
+    color: #4169e1;
     font-size: 22px;
     line-height: 1.5;
     letter-spacing: 1px;
@@ -64,18 +65,18 @@
     text-decoration: none;
     display: inline-block;
     padding: 12px 35px;
-    background-color: #cc0000;
+    background-color: #4169e1;
     border-radius: 25px;
     color: #fff;
     letter-spacing: 1.5px;
     margin-top: 20px;
-    border: 1px solid #cc0000;
+    border: 1px solid #4169e1;
 
 }
 
 .about-content .about-article a:hover{
     background-color: #fff;
-    color: #cc0000;
+    color: #4169e1;
     transition: 0.2s ease;
 }
 
