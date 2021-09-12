@@ -138,7 +138,7 @@ transition: width .3s;
     width: 100%;
 } */
 .hero{
-    background-image: url('/assets/imgs/Home.JPG');
+    background-image: url('assets/imgs/Home.JPG');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
