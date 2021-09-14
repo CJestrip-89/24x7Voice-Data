@@ -101,7 +101,7 @@ text-align: center;
    background:linear-gradient(45deg,
                               rgba(255,28,8,0.7)0%,
                               rgba(255,0,82,0.7)100%),
-                              url('/assets/imgs/service.jpg');
+                              url('assets/imgs/service.jpg');
     background-size: cover;
 }
 .card:nth-child(2):hover
@@ -109,7 +109,7 @@ text-align: center;
    background:linear-gradient(45deg,
                               rgba(255,28,8,0.7)0%,
                               rgba(255,0,82,0.7)100%),
-                              url('/assets/imgs/service.jpg');
+                              url('assets/imgs/service.jpg');
     background-size: cover;
 }
 .card:nth-child(3):hover
@@ -117,7 +117,7 @@ text-align: center;
    background:linear-gradient(45deg,
                               rgba(255,28,8,0.7)0%,
                               rgba(255,0,82,0.7)100%),
-                              url('/assets/imgs/security-cameras.jpg');
+                              url('assets/imgs/security-cameras.jpg');
     background-size: cover;
 }
 .card:nth-child(4):hover
@@ -125,7 +125,7 @@ text-align: center;
    background:linear-gradient(45deg,
                               rgba(255,28,8,0.7)0%,
                               rgba(255,0,82,0.7)100%),
-                              url('/assets/imgs/office-phone-100621813-large.jpg');
+                              url('assets/imgs/office-phone-100621813-large.jpg');
     background-size: cover;
 }
 .card:nth-child(5):hover
@@ -133,7 +133,7 @@ text-align: center;
    background:linear-gradient(45deg,
                               rgba(255,28,8,0.7)0%,
                               rgba(255,0,82,0.7)100%),
-                              url('/assets/imgs/Data-cables.jpg');
+                              url('assets/imgs/Data-cables.jpg');
     background-size: cover;
 }
 .card:nth-child(6):hover
@@ -141,7 +141,7 @@ text-align: center;
    background:linear-gradient(45deg,
                               rgba(255,28,8,0.7)0%,
                               rgba(255,0,82,0.7)100%),
-                              url('/assets/imgs/doorbell.jpg');
+                              url('assets/imgs/doorbell.jpg');
     background-size: cover;
 }
 
@@ -396,23 +396,23 @@ text-align: center;
 }
 
 .services-card:nth-child(1)::before{
-    background-image: url("/assets/imgs/service-call.jpg");
+    background-image: url("assets/imgs/service-call.jpg");
 }
 
 .services-card:nth-child(2)::before{
-    background-image: url("/assets/imgs/security-cameras.jpg");
+    background-image: url("assets/imgs/security-cameras.jpg");
 }
 
 .services-card:nth-child(3)::before{
-    background-image: url("/assets/imgs/phone-system.jpg");
+    background-image: url("assets/imgs/phone-system.jpg");
 }
 
 .services-card:nth-child(4)::before{
-    background-image: url("/assets/imgs/Data-cables.jpg");
+    background-image: url("assets/imgs/Data-cables.jpg");
 }
 
 .services-card:nth-child(5)::before{
-    background-image: url("/assets/imgs/bell-buzzer.jpg");
+    background-image: url("assets/imgs/bell-buzzer.jpg");
 }
 
 .services-page_content{
